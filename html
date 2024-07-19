@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Stakeholder Contract Interface</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Stakeholder Contract Interface</h1>
+    
+    <h2>Register Stakeholder</h2>
+    <form id="registerForm">
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+      <label for="share">Share</label>
+      <input type="number" id="share" name="share" required>
+      <button type="submit">Register Stakeholder</button>
+    </form>
+
+    <h2>Deposit Profit</h2>
+    <form id="depositForm">
+      <button type="submit">Deposit Profit</button>
+    </form>
+
+    <h2>View Stakeholder Share</h2>
+    <form id="shareForm">
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required>
+      <button type="submit">View Share</button>
+    </form>
+
+    <h2>View Total Shares</h2>
+    <button id="totalSharesBtn">View Total Shares</button>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
